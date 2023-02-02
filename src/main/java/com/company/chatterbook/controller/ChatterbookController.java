@@ -60,7 +60,7 @@ public class ChatterbookController {
         return res;
     }
 
-    @RequestMapping(value = "/users/posts/{name}", method = RequestMethod.GET)
+    @RequestMapping(value = "/users/{name}/posts", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<ChatterPost> getPostsbyName(@PathVariable String name) {
         List<ChatterPost> res = null;
